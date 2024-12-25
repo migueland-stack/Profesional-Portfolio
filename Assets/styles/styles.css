@@ -251,7 +251,11 @@ a.active {
 }
 
 .project-card:hover {
-  border: 1px solid var(--color-primary-offset);
+  box-shadow:
+    0 -3em 3em rgb(255 82 119 / 30%),
+    0 0 0 2px white,
+    0.3em 0.3em 1em rgb(200 41 87 / 60%);
+  transform: scale(1.01);
 }
 
 .project-card img {
