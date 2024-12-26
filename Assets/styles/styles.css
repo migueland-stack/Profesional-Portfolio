@@ -322,9 +322,8 @@ a.active {
 .about-container img {
   height: auto;
   width: 168px;
-  padding: 10px;
-  background-color: var(--color-bg-offset);
   border-radius: 15px;
+  box-shadow: 0px 5px 10px 0px var(--color-border); 
 }
 
 .social-media-links {
