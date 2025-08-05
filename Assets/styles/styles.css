@@ -162,7 +162,7 @@ a.active {
 .timeline-dot {
   position: absolute;
   left: -0.65rem;
-  top: 0;
+  top: 0.3rem;
   width: 1rem;
   height: 1rem;
   background-color: var(--color-primary);
@@ -239,6 +239,9 @@ a.active {
   gap: 1.5rem;
 }
 
+.alphacom-logo {
+  border-radius: 10px;
+}
 
 .project-card {
   background-color: rgb(20, 20, 20);
@@ -323,7 +326,7 @@ a.active {
   height: auto;
   width: 168px;
   border-radius: 15px;
-  box-shadow: 0px 5px 10px 0px var(--color-border); 
+  box-shadow: 0px 5px 10px 0px var(--color-border);
 }
 
 .social-media-links {
