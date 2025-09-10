@@ -11,7 +11,7 @@ window.addEventListener("scroll", function () {
 document.querySelectorAll("nav a:not([href^='mailto:'])").forEach(link => {
   link.addEventListener("click", event => {
     event.preventDefault();
-    const targetId = link.textContent.toLowerCase().replace(" ", "-");
+    const targetId = link.getAttribute("href").substring(1);
     const targetSection = document.getElementById(targetId);
     if (targetSection) {
       targetSection.scrollIntoView({ behavior: "smooth" });
@@ -36,7 +36,7 @@ const observer = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.6 }
+  { threshold: 0.3, rootMargin: "0px 0px -40% 0px" }
 );
 
 sections.forEach(section => observer.observe(section));
