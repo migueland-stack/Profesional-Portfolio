@@ -246,6 +246,7 @@ a.active {
 .project-card {
   background-color: rgb(20, 20, 20);
   color: var(--color-text);
+  max-height: 510px;
   padding: 1rem;
   border-radius: 10px;
   text-align: left;
@@ -258,12 +259,12 @@ a.active {
     0 -3em 3em rgb(255 82 119 / 30%),
     0 0 0 2px white,
     0.3em 0.3em 1em rgb(200 41 87 / 60%);
-  transform: scale(1.01);
+  /*transform: scale(1.01);*/
 }
 
 .project-card img {
   width: 100%;
-  height: auto;
+  height: 200px;
   border-radius: 10px;
 }
 
