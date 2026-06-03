@@ -140,3 +140,9 @@ style.textContent = `
   }
 `;
 document.head.appendChild(style);
+
+const footerCopy = document.querySelector(".footer-copy");
+if (footerCopy) {
+  const currentYear = new Date().getFullYear();
+  footerCopy.textContent = `© ${currentYear} Miguel Ureña. All rights reserved.`;
+}
